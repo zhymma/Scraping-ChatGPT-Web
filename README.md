@@ -145,6 +145,59 @@ The project includes a Camoufox template for creating stealth scrapers that can 
 2. Generate XPath selectors for the desired elements
 3. Create a complete Camoufox scraper based on the template
 
+### Chatbox Conversation Scrapers
+
+#### Kimi (moonshot.cn)
+
+A ready-to-run Camoufox scraper for Kimi is provided at `MCPfiles/kimi_moonshot_chat_scraper.py`. It:
+- Reads prompts from `*_input_prompts.txt` files (one prompt per line)
+- Supports multi-task workflows (task1, task2, etc.)
+- Waits for manual login
+- Sends each prompt to Kimi and captures the final response and citations
+- Extracts web search results if used
+- Writes structured records to `output/kimi_conversations_<task>.ndjson` and a readable log to `output/kimi_conversations_<task>.md`
+
+Run:
+
+```bash
+python MCPfiles/kimi_moonshot_chat_scraper.py
+```
+
+#### DeepSeek (chat.deepseek.com)
+
+A Camoufox scraper for DeepSeek is provided at `MCPfiles/deepseek_chat_scraper.py`. It:
+- Based on the Kimi scraper template with generic selectors
+- Reads prompts from `*_input_prompts.txt` files (one prompt per line)
+- Supports multi-task workflows and skip processed prompts
+- Waits for manual login (up to 5 minutes)
+- Creates a new conversation for each prompt
+- Captures streaming responses with citations
+- Writes structured records to `output/deepseek_conversations_<task>.ndjson` and `output/deepseek_conversations_<task>.md`
+
+Run:
+
+```bash
+python MCPfiles/deepseek_chat_scraper.py
+```
+
+**Note**: You may need to adjust the selectors in `deepseek_chat_scraper.py` after inspecting the actual DeepSeek UI. See `MCPfiles/DEEPSEEK_README.md` for detailed instructions.
+
+#### Common Features
+
+Both scrapers include:
+- Persistent session management (cookies + storage)
+- Automatic prompt reuse detection (skip already processed)
+- Crash-resistant design (saves after each prompt)
+- Human-like delays between actions
+- Automatic conversation ID extraction
+- Language detection (Chinese/English)
+- Response latency measurement
+
+Notes:
+- Scripts use persistent profile directories at `.camoufox_profile/<site>` to keep your session
+- If login is not detected within timeout, scripts exit; log in and rerun
+- Selectors are configurable at the top of each script in case the UI changes
+
 ### Custom Scrapers
 
 You can extend the functionality by adding new scraper types to the cursor-rules files. The modular design allows for easy customization.

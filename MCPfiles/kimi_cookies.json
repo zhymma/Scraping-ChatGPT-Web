@@ -1,0 +1,132 @@
+[
+  {
+    "name": "HMACCOUNT",
+    "value": "32385C76E4A092E8",
+    "domain": ".www.kimi.com",
+    "path": "/",
+    "expires": -1,
+    "httpOnly": false,
+    "secure": false,
+    "sameSite": "None"
+  },
+  {
+    "name": "__snaker__id",
+    "value": "9cjvcvXqiebbLTyd",
+    "domain": "www.kimi.com",
+    "path": "/",
+    "expires": 1796975071,
+    "httpOnly": false,
+    "secure": false,
+    "sameSite": "None"
+  },
+  {
+    "name": "gdxidpyhxdE",
+    "value": "CiKJzdVods6Z2t8C31aDXJC2kiIn%2FHXa8x9Ba6GH%5C19m9rdCQzjQ66M%2F6nCv5reb0ah2h6NVuzyBlunM%2FEQvAsuLyGlyHdCYumtQ%5CPhrkg%5ChE%2FJgT8Tvi11lxDAXJq6OsOThf0S%5Ccvo%5CrUbOThXb82zLk0%5C6biqQb5gGHnuj93qg2eWv%3A1765442076150",
+    "domain": "www.kimi.com",
+    "path": "/",
+    "expires": 1768034076,
+    "httpOnly": false,
+    "secure": false,
+    "sameSite": "None"
+  },
+  {
+    "name": "kimi-auth",
+    "value": "eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ1c2VyLWNlbnRlciIsImV4cCI6MTc2ODAzMzE4NCwiaWF0IjoxNzY1NDQxMTg0LCJqdGkiOiJkNHQ3dDg0MjY4Z3E2Y2o1dHB2ZyIsInR5cCI6ImFjY2VzcyIsImFwcF9pZCI6ImtpbWkiLCJzdWIiOiJjbmN0aTEwM3IwN2RqN3FkYW4wMCIsInNwYWNlX2lkIjoiY25jdGkxMDNyMDdkajdxZGFtdmciLCJhYnN0cmFjdF91c2VyX2lkIjoiY25jdGkxMDNyMDdkajdxZGFtdjAiLCJyb2xlcyI6WyJkZWVwX3Jlc2VhcmNoIiwidmlkZW9fZ2VuX2FjY2VzcyJdLCJzc2lkIjoiMTczMDEyOTkyNDgyMjcwOTU5OCIsImRldmljZV9pZCI6Ijc1ODI1MDMwNTU4NDU4NzY0ODQiLCJyZWdpb24iOiJjbiIsIm1lbWJlcnNoaXAiOnsibGV2ZWwiOjEwfX0.NGyFQUdcxLDEK2Jq-LhlvxQAf5KZtV1IbmzMjxAqIFZggFho50GOESstOHeuOACXvHYtZsC2vu8yazwO9c_UTQ",
+    "domain": "www.kimi.com",
+    "path": "/",
+    "expires": 1796977185,
+    "httpOnly": true,
+    "secure": true,
+    "sameSite": "Strict"
+  },
+  {
+    "name": "_ga",
+    "value": "GA1.1.1787977024.1765439065",
+    "domain": ".kimi.com",
+    "path": "/",
+    "expires": 1800015830,
+    "httpOnly": false,
+    "secure": false,
+    "sameSite": "None"
+  },
+  {
+    "name": "_gcl_au",
+    "value": "1.1.460760913.1765439065",
+    "domain": ".kimi.com",
+    "path": "/",
+    "expires": 1773215065,
+    "httpOnly": false,
+    "secure": false,
+    "sameSite": "None"
+  },
+  {
+    "name": "Hm_lvt_358cae4815e85d48f7e8ab7f3680a74b",
+    "value": "1765439066",
+    "domain": ".www.kimi.com",
+    "path": "/",
+    "expires": 1796991833,
+    "httpOnly": false,
+    "secure": false,
+    "sameSite": "None"
+  },
+  {
+    "name": "Hm_lpvt_358cae4815e85d48f7e8ab7f3680a74b",
+    "value": "1765455834",
+    "domain": ".www.kimi.com",
+    "path": "/",
+    "expires": -1,
+    "httpOnly": false,
+    "secure": false,
+    "sameSite": "None"
+  },
+  {
+    "name": "_ga_YXD8W70SZP",
+    "value": "GS2.1.s1765455830$o2$g0$t1765455837$j53$l0$h0",
+    "domain": ".kimi.com",
+    "path": "/",
+    "expires": 1800015837,
+    "httpOnly": false,
+    "secure": false,
+    "sameSite": "None"
+  },
+  {
+    "name": "theme",
+    "value": "dark",
+    "domain": "www.kimi.com",
+    "path": "/",
+    "expires": 1796996336,
+    "httpOnly": false,
+    "secure": false,
+    "sameSite": "Strict"
+  },
+  {
+    "name": "_gid",
+    "value": "GA.7627519501.13678147764345",
+    "domain": "c.dun.163.com",
+    "path": "/api/v2",
+    "expires": -1,
+    "httpOnly": false,
+    "secure": false,
+    "sameSite": "None"
+  },
+  {
+    "name": "_ga",
+    "value": "GA.1.20cfaa1a6847d.b1e2c4caf500d215ef9b",
+    "domain": "c.dun.163.com",
+    "path": "/api/v3",
+    "expires": -1,
+    "httpOnly": false,
+    "secure": false,
+    "sameSite": "None"
+  },
+  {
+    "name": "HMACCOUNT",
+    "value": "32385C76E4A092E8",
+    "domain": ".hm.baidu.com",
+    "path": "/",
+    "expires": 1799999065,
+    "httpOnly": false,
+    "secure": false,
+    "sameSite": "None"
+  }
+]

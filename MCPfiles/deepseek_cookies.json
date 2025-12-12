@@ -1,0 +1,112 @@
+[
+  {
+    "name": "_cfuvid",
+    "value": "8ujybb8kB79n0n74LSWnh6NoEhRu.4poT068rFupqP8-1765523811373-0.0.1.1-604800000",
+    "domain": ".challenges.cloudflare.com",
+    "path": "/",
+    "expires": -1,
+    "httpOnly": true,
+    "secure": true,
+    "sameSite": "None"
+  },
+  {
+    "name": "acw_tc",
+    "value": "2ff617a317655235569024797e2b52e474c6cae35bd214b88bc83c4048",
+    "domain": "static.guance.com",
+    "path": "/",
+    "expires": 1765527157,
+    "httpOnly": true,
+    "secure": false,
+    "sameSite": "None"
+  },
+  {
+    "name": "cdn_sec_tc",
+    "value": "2ff617a317655235569024797e2b52e474c6cae35bd214b88bc83c4048",
+    "domain": "static.guance.com",
+    "path": "/",
+    "expires": 1765527157,
+    "httpOnly": true,
+    "secure": false,
+    "sameSite": "None"
+  },
+  {
+    "name": "ds_session_id",
+    "value": "d47738156e1b4f8ebe34010dc7bfacd9",
+    "domain": "chat.deepseek.com",
+    "path": "/",
+    "expires": -1,
+    "httpOnly": true,
+    "secure": true,
+    "sameSite": "Strict"
+  },
+  {
+    "name": "_gc_usr_id_cs0_d0_sec0_part0",
+    "value": "072fb086-0277-4d67-a350-96cbb29a2fd0",
+    "domain": "chat.deepseek.com",
+    "path": "/",
+    "expires": 1770653635,
+    "httpOnly": false,
+    "secure": false,
+    "sameSite": "Strict"
+  },
+  {
+    "name": "ds_cookie_preference",
+    "value": "%257B%2522level%2522%253A%2522all%2522%257D",
+    "domain": ".deepseek.com",
+    "path": "/",
+    "expires": 1797005636,
+    "httpOnly": false,
+    "secure": false,
+    "sameSite": "None"
+  },
+  {
+    "name": "smidV2",
+    "value": "202512120013577ec580044b00bc37c3fcb099a362091500fecbd6eaf723620",
+    "domain": "chat.deepseek.com",
+    "path": "/",
+    "expires": 1800029637,
+    "httpOnly": false,
+    "secure": false,
+    "sameSite": "None"
+  },
+  {
+    "name": ".thumbcache_6b2e5483f9d858d7c661c5e276b6a6ae",
+    "value": "",
+    "domain": "chat.deepseek.com",
+    "path": "/",
+    "expires": 1800083812,
+    "httpOnly": false,
+    "secure": false,
+    "sameSite": "None"
+  },
+  {
+    "name": "intercom-session-guh50jw4",
+    "value": "eDFqU2VCK1BPUFYrWllVTUE0RGxOR3JlQU5rUmZJMHlSZlZaUnlDaEJJYmkwbjZBSFg5NDRhQ2VtdWphZStZYXA0cGUrRDZ2SThOSVdjRk1PbHRhYlNRSUhtTVFRajJnVDNCWklYY0FDZ3M9LS1TYnlTTlFLNVRsQzhhYkhJZ2tPWlhRPT0=--be04ada4d34ee57a43f2276a75a9131e1eb85818",
+    "domain": ".deepseek.com",
+    "path": "/",
+    "expires": 1766128617,
+    "httpOnly": false,
+    "secure": true,
+    "sameSite": "Lax"
+  },
+  {
+    "name": "intercom-device-id-guh50jw4",
+    "value": "22b77e67-b477-442b-b90c-fe98fe8f3aff",
+    "domain": ".deepseek.com",
+    "path": "/",
+    "expires": 1788853818,
+    "httpOnly": false,
+    "secure": true,
+    "sameSite": "Lax"
+  },
+  {
+    "name": "_gc_s_cs0_d0_sec0_part0",
+    "value": "rum=1&id=fecb03a1-8a5c-404b-bf40-a9320a6a6286&created=1765523557575&expire=1765524821373",
+    "domain": "chat.deepseek.com",
+    "path": "/",
+    "expires": 1765524821,
+    "httpOnly": false,
+    "secure": false,
+    "sameSite": "Strict"
+  }
+]

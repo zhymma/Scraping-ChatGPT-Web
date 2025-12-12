@@ -1,0 +1,40 @@
+{
+  "localStorage": {
+    "anonymous_refresh_token": "eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ1c2VyLWNlbnRlciIsImV4cCI6MTc3MzIxNTA2OCwiaWF0IjoxNzY1NDM5MDY4LCJqdGkiOiJkNHQ3Y24ybjc1NDF2dDk1Z2l0ZyIsInR5cCI6InJlZnJlc2giLCJhcHBfaWQiOiJraW1pIiwiZGV2aWNlX2lkIjoiNzU4MjUwMzA1NTg0NTg3NjQ4NCJ9.o7q1vSsS5BURyC-nuf3BmCjwMcV_zxSk1a7rdslgwtR43-7VxbUccXZ1AiywoGE87nFNzFx43Gf_z3O1P7IhTg",
+    "refresh_token": "eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ1c2VyLWNlbnRlciIsImV4cCI6MTc3MzIxNzE4NCwiaWF0IjoxNzY1NDQxMTg0LCJqdGkiOiJkNHQ3dDg0MjY4Z3E2Y2o1dHEwMCIsInR5cCI6InJlZnJlc2giLCJhcHBfaWQiOiJraW1pIiwic3ViIjoiY25jdGkxMDNyMDdkajdxZGFuMDAiLCJzcGFjZV9pZCI6ImNuY3RpMTAzcjA3ZGo3cWRhbXZnIiwiYWJzdHJhY3RfdXNlcl9pZCI6ImNuY3RpMTAzcjA3ZGo3cWRhbXYwIiwicm9sZXMiOlsiZGVlcF9yZXNlYXJjaCIsInZpZGVvX2dlbl9hY2Nlc3MiXSwic3NpZCI6IjE3MzAxMjk5MjQ4MjI3MDk1OTgiLCJkZXZpY2VfaWQiOiI3NTgyNTAzMDU1ODQ1ODc2NDg0IiwicmVnaW9uIjoiY24iLCJtZW1iZXJzaGlwIjp7ImxldmVsIjoxMH19.JvmkZzNL_tKI27MFtKEb0Z49G0SyJ2L9xf63yQThVoKe-fSTjksCs0GEPWBz7YbJ40Phj3y72yoR6vXmT-kQdQ",
+    "ntes_utid": "tid._.3%2F1F6B1qjxFFAxFFQEPXn0Xha63VY1Rn._.0.,.edd._.._.0",
+    "firstKimiPlusEduModal": "false",
+    "KIMI_MODELS_EDUCATION": "true",
+    "_gcl_ls": "{\"schema\":\"gcl\",\"version\":1,\"gcl_ctr\":{\"value\":{\"value\":0,\"timeouts\":0,\"creationTimeMs\":1765439065458},\"expires\":1773215065458}}",
+    "language": "zh",
+    "BLACK_FRIDAY_SHARED_CHAT_SET": "[]",
+    "__tea_cache_tokens_20001731": "{\"web_id\":\"7582503055845876484\",\"user_unique_id\":\"cncti103r07dj7qdan00\",\"timestamp\":1765460336380,\"_type_\":\"default\"}",
+    "Hm_lvt_358cae4815e85d48f7e8ab7f3680a74b": "1796975065549|1765439066",
+    "selectUseModel": "5",
+    "__tea_cache_refer_20001731": "{\"refer_key\":\"https://www.kimi.com/\",\"refer_title\":\"Kimi - K2 长思考上线\",\"refer_manual_key\":\"\",\"routeChange\":true}",
+    "kimi-language": "zh-CN",
+    "__tea_sdk_ab_version_20001731": "{\"data\":{\"android_list_messages_paging\":{\"val\":false,\"vid\":\"392389\"},\"banana\":{\"val\":\"with_banana\",\"vid\":\"395831\"},\"n2s_memory_client\":{\"val\":0,\"vid\":\"324150\"}},\"uuid\":\"cncti103r07dj7qdan00\",\"timestamp\":1765460338682,\"ab_version_multilink\":[],\"ab_ext_version\":[],\"ab_version\":[\"392389\",\"395831\",\"324150\"]}",
+    "KIMI_UPGRADE_K2_TURBO_SHOW_DATE": "2025-12",
+    "APMPLUS__cache__server__config__566559": "{\"sample\":{\"sample_rate\":1,\"include_users\":[],\"sample_granularity\":\"session\",\"rules\":[{\"name\":\"js_error\",\"enable\":true,\"sample_rate\":0.05,\"conditional_sample_rules\":[{\"sample_rate\":1,\"filter\":{\"type\":\"and\",\"children\":[{\"type\":\"rule\",\"field\":\"common.url\",\"op\":\"regex\",\"groupKey\":\"\",\"values\":[\"ppt\"]}]}},{\"sample_rate\":1,\"filter\":{\"type\":\"and\",\"children\":[{\"type\":\"rule\",\"field\":\"common.pid\",\"op\":\"regex\",\"groupKey\":\"\",\"values\":[\"ppt\"]}]}},{\"sample_rate\":1,\"filter\":{\"type\":\"and\",\"children\":[{\"type\":\"rule\",\"field\":\"payload.error.message\",\"op\":\"regex\",\"groupKey\":\"\",\"values\":[\"fileParseProgressError\",\"fileUploadError\"]}]}}]},{\"name\":\"http\",\"enable\":false,\"sample_rate\":0,\"conditional_sample_rules\":[]},{\"name\":\"performance\",\"enable\":false,\"sample_rate\":0,\"conditional_sample_rules\":[]},{\"name\":\"resource_error\",\"enable\":true,\"sample_rate\":0.01,\"conditional_sample_rules\":[]},{\"name\":\"resource\",\"enable\":false,\"sample_rate\":0,\"conditional_sample_rules\":[]},{\"name\":\"custom\",\"enable\":true,\"sample_rate\":1,\"conditional_sample_rules\":[]},{\"name\":\"performance_timing\",\"enable\":false,\"sample_rate\":0,\"conditional_sample_rules\":[]},{\"name\":\"performance_longtask\",\"enable\":true,\"sample_rate\":0.01,\"conditional_sample_rules\":[]},{\"name\":\"pageview\",\"enable\":true,\"sample_rate\":1,\"conditional_sample_rules\":[]},{\"name\":\"action\",\"enable\":true,\"sample_rate\":0.01,\"conditional_sample_rules\":[]},{\"name\":\"blank_screen\",\"enable\":true,\"sample_rate\":0.01,\"conditional_sample_rules\":[]}]},\"status\":0,\"timestamp\":1765460337608}",
+    "access_token": "eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ1c2VyLWNlbnRlciIsImV4cCI6MTc2ODAzMzE4NCwiaWF0IjoxNzY1NDQxMTg0LCJqdGkiOiJkNHQ3dDg0MjY4Z3E2Y2o1dHB2ZyIsInR5cCI6ImFjY2VzcyIsImFwcF9pZCI6ImtpbWkiLCJzdWIiOiJjbmN0aTEwM3IwN2RqN3FkYW4wMCIsInNwYWNlX2lkIjoiY25jdGkxMDNyMDdkajdxZGFtdmciLCJhYnN0cmFjdF91c2VyX2lkIjoiY25jdGkxMDNyMDdkajdxZGFtdjAiLCJyb2xlcyI6WyJkZWVwX3Jlc2VhcmNoIiwidmlkZW9fZ2VuX2FjY2VzcyJdLCJzc2lkIjoiMTczMDEyOTkyNDgyMjcwOTU5OCIsImRldmljZV9pZCI6Ijc1ODI1MDMwNTU4NDU4NzY0ODQiLCJyZWdpb24iOiJjbiIsIm1lbWJlcnNoaXAiOnsibGV2ZWwiOjEwfX0.NGyFQUdcxLDEK2Jq-LhlvxQAf5KZtV1IbmzMjxAqIFZggFho50GOESstOHeuOACXvHYtZsC2vu8yazwO9c_UTQ",
+    "selectThink": "false",
+    "__tea_cache_first_20001731": "1",
+    "anonymous_access_token": "eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ1c2VyLWNlbnRlciIsImV4cCI6MTc2ODAzMTA2OCwiaWF0IjoxNzY1NDM5MDY4LCJqdGkiOiJkNHQ3Y24ybjc1NDF2dDk1Z2l0MCIsInR5cCI6ImFjY2VzcyIsImFwcF9pZCI6ImtpbWkiLCJkZXZpY2VfaWQiOiI3NTgyNTAzMDU1ODQ1ODc2NDg0In0.dsAhACTNb4_XOTjhZ2o5y4rVnaQXHEWzi0Vtkw7hJkoz11BbmkuqBHIw1EeOWI-fCvb7JnlLTDc0WNHblbYjiQ",
+    "/_2752f01d87dc45948de1a1e0ac2b7160_NECAPTCHA_ERROR_COUNTS": "0",
+    "showNavList": "true",
+    "APMPLUS566559": "JTdCJTIydXNlcklkJTIyOiUyMmZlYTRkMjE3LWJmNDItNDEyZC05YzcyLWY1OTc5MTdmY2RjYSUyMiwlMjJkZXZpY2VJZCUyMjolMjIwNjAxMjFjMC02NmQxLTQwYWYtYWQwNS00YTcwMmYwYTU4ZWUlMjIsJTIyciUyMjowLjkyMTIwNjI2MzAyNDMzNywlMjJleHBpcmVzJTIyOjE3NzMyMzYzMzgxMDMlN0Q=",
+    "locale": "zh-CN",
+    "__snaker__id": "",
+    "KIMI_SIDEBAR_COLLAPSE": "false",
+    "ujg3ps2znyw": "TO4hDnJRwuhARxUAEQKWykClb7l/nnay",
+    "selectSearch": "true"
+  },
+  "sessionStorage": {
+    "Hm_unsent_358cae4815e85d48f7e8ab7f3680a74b": "[\"hm.baidu.com/hm.gif?hca=32385C76E4A092E8&cc=1&ck=1&cl=24-bit&ds=2560x1440&vl=1308&et=0&ja=0&ln=en-us&lo=0&rnd=1896304133&si=358cae4815e85d48f7e8ab7f3680a74b&v=1.3.2&lv=1&sn=57236&r=0&ww=2540&u=https%3A%2F%2Fwww.kimi.com%2F&tt=Kimi%20AI%20-%20Kimi%20K2%20Thinking%20is%20here\",\"hm.baidu.com/hm.gif?hca=32385C76E4A092E8&cc=1&ck=1&cl=30-bit&ds=1512x982&vl=885&ep=3550%2C3549&et=3&ja=0&ln=zh-cn&lo=0&lt=1765439066&rnd=217756468&si=358cae4815e85d48f7e8ab7f3680a74b&v=1.3.2&lv=2&sn=8469&r=0&ww=1512&u=https%3A%2F%2Fwww.kimi.com%2F\"]",
+    "kimi-web-extension-disabled": "true",
+    "HMACCOUNT": "32385C76E4A092E8",
+    "__tea_session_id_20001731": "{\"sessionId\":\"74ccf357-32f5-4f04-a68b-d08c763e5067\",\"timestamp\":1765462916397}",
+    "Hm_lpvt_358cae4815e85d48f7e8ab7f3680a74b": "1765439066",
+    "_tea_cache_duration": "{\"duration\":7684,\"page_title\":\"Kimi - K2 长思考上线\"}"
+  }
+}
