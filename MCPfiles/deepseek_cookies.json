@@ -1,7 +1,7 @@
 [
   {
     "name": "_cfuvid",
-    "value": "8ujybb8kB79n0n74LSWnh6NoEhRu.4poT068rFupqP8-1765523811373-0.0.1.1-604800000",
+    "value": "TbXFj1HfkBwmdtj61s4xcBuYYvH7_NfSxhLajVi5hv8-1765896785800-0.0.1.1-604800000",
     "domain": ".challenges.cloudflare.com",
     "path": "/",
     "expires": -1,
@@ -11,20 +11,20 @@
   },
   {
     "name": "acw_tc",
-    "value": "2ff617a317655235569024797e2b52e474c6cae35bd214b88bc83c4048",
+    "value": "2ff617a417658957545457723ef040e094a05f9878affa53ab862d69ed",
     "domain": "static.guance.com",
     "path": "/",
-    "expires": 1765527157,
+    "expires": 1765899355,
     "httpOnly": true,
     "secure": false,
     "sameSite": "None"
   },
   {
     "name": "cdn_sec_tc",
-    "value": "2ff617a317655235569024797e2b52e474c6cae35bd214b88bc83c4048",
+    "value": "2ff617a417658957545457723ef040e094a05f9878affa53ab862d69ed",
     "domain": "static.guance.com",
     "path": "/",
-    "expires": 1765527157,
+    "expires": 1765899355,
     "httpOnly": true,
     "secure": false,
     "sameSite": "None"
@@ -70,21 +70,31 @@
     "sameSite": "None"
   },
   {
-    "name": ".thumbcache_6b2e5483f9d858d7c661c5e276b6a6ae",
-    "value": "",
+    "name": "HWWAFSESID",
+    "value": "8b6b48e620ad54c0e2b",
     "domain": "chat.deepseek.com",
     "path": "/",
-    "expires": 1800083812,
-    "httpOnly": false,
-    "secure": false,
+    "expires": -1,
+    "httpOnly": true,
+    "secure": true,
+    "sameSite": "None"
+  },
+  {
+    "name": "HWWAFSESTIME",
+    "value": "1765526615459",
+    "domain": "chat.deepseek.com",
+    "path": "/",
+    "expires": -1,
+    "httpOnly": true,
+    "secure": true,
     "sameSite": "None"
   },
   {
     "name": "intercom-session-guh50jw4",
-    "value": "eDFqU2VCK1BPUFYrWllVTUE0RGxOR3JlQU5rUmZJMHlSZlZaUnlDaEJJYmkwbjZBSFg5NDRhQ2VtdWphZStZYXA0cGUrRDZ2SThOSVdjRk1PbHRhYlNRSUhtTVFRajJnVDNCWklYY0FDZ3M9LS1TYnlTTlFLNVRsQzhhYkhJZ2tPWlhRPT0=--be04ada4d34ee57a43f2276a75a9131e1eb85818",
+    "value": "eERZMGxwVzFqZDEwd29sT012NlgrUXpCVXJzYW1ZaExCRDc4TG9XWlRHTGVZWGRHbVRyeUZCUlJzR1JpelhZSHAvOFZZWE1VMGYxWmV5ZXptOEEreFcvNlZtYjRXUm52aEFzTUVwREVERTA9LS14RWR3eVY2TTdZVWJIdHVhbEtkeUdRPT0=--ed8df4dfa39640cd76894b16e56dfc0a87ddea81",
     "domain": ".deepseek.com",
     "path": "/",
-    "expires": 1766128617,
+    "expires": 1766399152,
     "httpOnly": false,
     "secure": true,
     "sameSite": "Lax"
@@ -94,17 +104,27 @@
     "value": "22b77e67-b477-442b-b90c-fe98fe8f3aff",
     "domain": ".deepseek.com",
     "path": "/",
-    "expires": 1788853818,
+    "expires": 1789124353,
     "httpOnly": false,
     "secure": true,
     "sameSite": "Lax"
   },
   {
-    "name": "_gc_s_cs0_d0_sec0_part0",
-    "value": "rum=1&id=fecb03a1-8a5c-404b-bf40-a9320a6a6286&created=1765523557575&expire=1765524821373",
+    "name": ".thumbcache_6b2e5483f9d858d7c661c5e276b6a6ae",
+    "value": "ZUt15YLACvvkkxV4j600/w0TCFhb3rWjxu9mAIwKoQfAblfOAYXYsN8/UY61pCiX4wubO4pUXKyblVrYXYl31A%3D%3D",
     "domain": "chat.deepseek.com",
     "path": "/",
-    "expires": 1765524821,
+    "expires": 1800456786,
+    "httpOnly": false,
+    "secure": false,
+    "sameSite": "None"
+  },
+  {
+    "name": "_gc_s_cs0_d0_sec0_part0",
+    "value": "rum=1&id=026c3983-1dce-4f50-9d07-826a76bfff7d&created=1765895756206&expire=1765897687895",
+    "domain": "chat.deepseek.com",
+    "path": "/",
+    "expires": 1765897687,
     "httpOnly": false,
     "secure": false,
     "sameSite": "Strict"

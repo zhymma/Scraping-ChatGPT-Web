@@ -488,16 +488,16 @@ Create a comparison table:
 
 | Feature | Kimi | DeepSeek | Doubao | Your Site |
 |---------|------|----------|--------|-----------|
-| Input selector | `div[role='textbox']` | `textarea._27c9245` ✅ | ? | ? |
-| Send method | Click button | Press Enter ✅ | ? | ? |
-| Stop icon | `svg[name="stop"]` | `button:has-text("停止")` | ? | ? |
-| Response container | `.chat-content-item-assistant` | `div.ds-message._63c77b1` ✅ | ? | ? |
-| Message list | `div.chat-content-list` | `div.dad65929` ✅ | ? | ? |
-| Markdown container | `div.markdown-container` | `div.ds-markdown` ✅ | ? | ? |
-| Citation format | Hover `.rag-tag` → `<a>` | Direct `<a[target="_blank"]>` ✅ | ? | ? |
-| Web search button | `div.container-block` | `div._74c0879` ✅ | ? | ? |
-| Web search panel | `div.side-console` | `div._519be07` / `div.dc433409` ✅ | ? | ? |
-| New conversation | `svg[name="AddConversation"]` | `div._5a8ac7a:has-text("开启新对话")` ✅ | ? | ? |
+| Input selector | `div[role='textbox']` | `textarea._27c9245` ✅ | `textarea[data-testid="chat_input_input"]` ✅ | ? |
+| Send method | Click button | Press Enter ✅ | Click `button[id="flow-end-msg-send"]` when enabled ✅ | ? |
+| Stop icon | `svg[name="stop"]` | `button:has-text("停止")` | `div[data-testid="chat_input_local_break_button"]:not(.hidden)` ✅ | ? |
+| Response container | `.chat-content-item-assistant` | `div.ds-message._63c77b1` ✅ | `div.inter-H_fm37 > div` (last child) ✅ | ? |
+| Message list | `div.chat-content-list` | `div.dad65929` ✅ | `div.inter-H_fm37` ✅ | ? |
+| Markdown container | `div.markdown-container` | `div.ds-markdown` ✅ | `div[class*="markdown"]` | ? |
+| Citation format | Hover `.rag-tag` → `<a>` | Direct `<a[target="_blank"]>` ✅ | Generic `<a[href^="http"]>`; main refs via side panel | ? |
+| Web search button | `div.container-block` | `div._74c0879` ✅ | `div[data-testid="search-reference-ui"]` ✅ | ? |
+| Web search panel | `div.side-console` | `div._519be07` / `div.dc433409` ✅ | `#chat-route-layout > aside ... div.scroll-H09izL` ✅ | ? |
+| New conversation | `svg[name="AddConversation"]` | `div._5a8ac7a:has-text("开启新对话")` ✅ | `button:has-text("新对话")` / home navigation (heuristic) | ? |
 
 **Note**: DeepSeek selectors marked with ✅ are verified from actual page structure (2025-12-11).
 

@@ -1,0 +1,19 @@
+###############################################################################
+# Local cookies / storage files (do NOT commit)
+###############################################################################
+
+MCPfiles/doubao_cookies.json
+MCPfiles/doubao_storage.json
+
+MCPfiles/kimi_cookies.json
+MCPfiles/kimi_storage.json
+
+MCPfiles/deepseek_cookies.json
+MCPfiles/deepseek_storage.json
+
+###############################################################################
+# Output data (training / test artifacts)
+###############################################################################
+
+output/
+

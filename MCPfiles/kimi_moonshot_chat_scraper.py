@@ -1027,6 +1027,7 @@ def load_processed_prompts(ndjson_path: str) -> set:
         return set()
 
     processed = set()
+    ok_items: List[Dict[str, Optional[str]]] = []
     try:
         with open(ndjson_path, "r", encoding="utf-8") as f:
             for line in f:
@@ -1034,11 +1035,25 @@ def load_processed_prompts(ndjson_path: str) -> set:
                     try:
                         item = json.loads(line)
                         prompt_text = item.get("prompt_text", "").strip()
-                        if prompt_text and item["status"] != "error":
-                            processed.add(prompt_text)
+                        status = item.get("status", "ok")
+                        if status == "ok":
+                            ok_items.append(item)
+                            if prompt_text:
+                                processed.add(prompt_text)
                     except json.JSONDecodeError:
                         continue
-        print(f"[INFO] Found {len(processed)} already processed prompts")
+
+        # Rewrite NDJSON to keep only status == "ok" items
+        try:
+            with open(ndjson_path, "w", encoding="utf-8") as wf:
+                for it in ok_items:
+                    wf.write(json.dumps(it, ensure_ascii=False) + "\n")
+        except Exception as e:
+            print(f"[WARN] Failed to rewrite Kimi NDJSON with ok items only: {e}")
+
+        print(
+            f"[INFO] Found {len(processed)} already processed prompts (kept only status='ok')"
+        )
         return processed
     except Exception as e:
         print(f"[WARN] Failed to load processed prompts: {e}")
@@ -1163,38 +1178,62 @@ def process_task(
         total_processed = 0
         for idx, prompt in enumerate(prompts):
             print(f"\n[INFO] Processing prompt {idx + 1}/{len(prompts)}")
-            try:
-                item = send_prompt_and_collect(
-                    page, prompt_text=prompt, website_name="KIMI"
-                )
-            except Exception as e:
-                url = page.url
-                item = {
-                    "website_name": "KIMI",
-                    "conversation_id": get_conversation_id_from_url(url),
-                    "item_url": url,
-                    "session_user": "",
-                    "model_name": "",
-                    "mode_online": "True",
-                    "prompt_text": prompt,
-                    "response_text": "",
-                    "response_citations": [],
-                    "response_language": "",
-                    "latency_ms": 0,
-                    "status": "error",
-                    "error_message": str(e),
-                    "message_id": "",
-                    "parent_message_id": "",
-                    "tokens_prompt": "",
-                    "tokens_completion": "",
-                    "tokens_total": "",
-                }
 
-            # Save immediately after each prompt (防止崩溃丢失数据)
-            print(f"[INFO] Saving result {idx + 1}/{len(prompts)}...")
-            write_outputs(output_ndjson, output_md, [item])
-            total_processed += 1
-            print(f"[INFO] ✓ Saved to {os.path.basename(output_ndjson)}")
+            # Retry up to 3 times if status is not "ok"
+            max_retries = 3
+            item: Dict[str, Optional[str]] = {}
+            for attempt in range(1, max_retries + 1):
+                try:
+                    item = send_prompt_and_collect(
+                        page, prompt_text=prompt, website_name="KIMI"
+                    )
+                except Exception as e:
+                    url = page.url
+                    print(
+                        f"[ERROR] Failed to process prompt (attempt {attempt}/{max_retries}): {e}"
+                    )
+                    item = {
+                        "website_name": "KIMI",
+                        "conversation_id": get_conversation_id_from_url(url),
+                        "item_url": url,
+                        "session_user": "",
+                        "model_name": "",
+                        "mode_online": "True",
+                        "prompt_text": prompt,
+                        "response_text": "",
+                        "response_citations": [],
+                        "response_language": "",
+                        "latency_ms": 0,
+                        "status": "error",
+                        "error_message": str(e),
+                        "message_id": "",
+                        "parent_message_id": "",
+                        "tokens_prompt": "",
+                        "tokens_completion": "",
+                        "tokens_total": "",
+                    }
+
+                status = item.get("status", "ok")
+                if status == "ok":
+                    break
+
+                if attempt < max_retries:
+                    print(
+                        f"[WARN] Prompt failed with status '{status}', retrying after short delay..."
+                    )
+                    human_think_time(1.0, 2.5)
+
+            # Save only successful prompts (status == "ok")
+            if item.get("status") != "ok":
+                print(
+                    f"[ERROR] Prompt failed after {max_retries} attempts, skipping save for this prompt."
+                )
+            else:
+                # Save immediately after each prompt (防止崩溃丢失数据)
+                print(f"[INFO] Saving result {idx + 1}/{len(prompts)}...")
+                write_outputs(output_ndjson, output_md, [item])
+                total_processed += 1
+                print(f"[INFO] ✓ Saved to {os.path.basename(output_ndjson)}")
 
             # Start a new conversation for the next prompt (except after the last one)
             if idx < len(prompts) - 1:
